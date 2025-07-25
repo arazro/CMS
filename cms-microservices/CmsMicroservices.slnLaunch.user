@@ -1,0 +1,22 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "content-service\\ContentService.API\\ContentService.API.csproj",
+        "Action": "Start",
+        "DebugTarget": "ContentService.API"
+      },
+      {
+        "Path": "user-service\\UserService.API\\UserService.API.csproj",
+        "Action": "Start",
+        "DebugTarget": "UserService.API"
+      },
+      {
+        "Path": "yarp-gateway\\YarpGateway.API\\YarpGateway.API.csproj",
+        "Action": "Start",
+        "DebugTarget": "YarpGateway.API"
+      }
+    ]
+  }
+]

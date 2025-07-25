@@ -1,0 +1,81 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34523.18
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContentService.API", "content-service\ContentService.API\ContentService.API.csproj", "{11A09D11-BB3C-45BD-A18D-ABCDEF000001}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContentService.Application", "content-service\ContentService.Application\ContentService.Application.csproj", "{11A09D12-BB3C-45BD-A18D-ABCDEF000002}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContentService.Domain", "content-service\ContentService.Domain\ContentService.Domain.csproj", "{11A09D13-BB3C-45BD-A18D-ABCDEF000003}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContentService.Infrastructure", "content-service\ContentService.Infrastructure\ContentService.Infrastructure.csproj", "{11A09D14-BB3C-45BD-A18D-ABCDEF000004}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContentService.Tests", "content-service\ContentService.Tests\ContentService.Tests.csproj", "{11A09D15-BB3C-45BD-A18D-ABCDEF000005}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserService.API", "user-service\UserService.API\UserService.API.csproj", "{22A09D11-BB3C-45BD-A18D-ABCDEF000006}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserService.Application", "user-service\UserService.Application\UserService.Application.csproj", "{22A09D12-BB3C-45BD-A18D-ABCDEF000007}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserService.Domain", "user-service\UserService.Domain\UserService.Domain.csproj", "{22A09D13-BB3C-45BD-A18D-ABCDEF000008}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserService.Infrastructure", "user-service\UserService.Infrastructure\UserService.Infrastructure.csproj", "{22A09D14-BB3C-45BD-A18D-ABCDEF000009}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserService.Tests", "user-service\UserService.Tests\UserService.Tests.csproj", "{22A09D15-BB3C-45BD-A18D-ABCDEF000010}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YarpGateway.API", "yarp-gateway\YarpGateway.API\YarpGateway.API.csproj", "{33A09D11-BB3C-45BD-A18D-ABCDEF000011}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{11A09D11-BB3C-45BD-A18D-ABCDEF000001}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11A09D11-BB3C-45BD-A18D-ABCDEF000001}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11A09D11-BB3C-45BD-A18D-ABCDEF000001}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11A09D11-BB3C-45BD-A18D-ABCDEF000001}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11A09D12-BB3C-45BD-A18D-ABCDEF000002}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11A09D12-BB3C-45BD-A18D-ABCDEF000002}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11A09D12-BB3C-45BD-A18D-ABCDEF000002}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11A09D12-BB3C-45BD-A18D-ABCDEF000002}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11A09D13-BB3C-45BD-A18D-ABCDEF000003}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11A09D13-BB3C-45BD-A18D-ABCDEF000003}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11A09D13-BB3C-45BD-A18D-ABCDEF000003}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11A09D13-BB3C-45BD-A18D-ABCDEF000003}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11A09D14-BB3C-45BD-A18D-ABCDEF000004}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11A09D14-BB3C-45BD-A18D-ABCDEF000004}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11A09D14-BB3C-45BD-A18D-ABCDEF000004}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11A09D14-BB3C-45BD-A18D-ABCDEF000004}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11A09D15-BB3C-45BD-A18D-ABCDEF000005}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11A09D15-BB3C-45BD-A18D-ABCDEF000005}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11A09D15-BB3C-45BD-A18D-ABCDEF000005}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11A09D15-BB3C-45BD-A18D-ABCDEF000005}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22A09D11-BB3C-45BD-A18D-ABCDEF000006}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22A09D11-BB3C-45BD-A18D-ABCDEF000006}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22A09D11-BB3C-45BD-A18D-ABCDEF000006}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22A09D11-BB3C-45BD-A18D-ABCDEF000006}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22A09D12-BB3C-45BD-A18D-ABCDEF000007}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22A09D12-BB3C-45BD-A18D-ABCDEF000007}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22A09D12-BB3C-45BD-A18D-ABCDEF000007}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22A09D12-BB3C-45BD-A18D-ABCDEF000007}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22A09D13-BB3C-45BD-A18D-ABCDEF000008}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22A09D13-BB3C-45BD-A18D-ABCDEF000008}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22A09D13-BB3C-45BD-A18D-ABCDEF000008}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22A09D13-BB3C-45BD-A18D-ABCDEF000008}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22A09D14-BB3C-45BD-A18D-ABCDEF000009}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22A09D14-BB3C-45BD-A18D-ABCDEF000009}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22A09D14-BB3C-45BD-A18D-ABCDEF000009}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22A09D14-BB3C-45BD-A18D-ABCDEF000009}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22A09D15-BB3C-45BD-A18D-ABCDEF000010}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22A09D15-BB3C-45BD-A18D-ABCDEF000010}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22A09D15-BB3C-45BD-A18D-ABCDEF000010}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22A09D15-BB3C-45BD-A18D-ABCDEF000010}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33A09D11-BB3C-45BD-A18D-ABCDEF000011}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33A09D11-BB3C-45BD-A18D-ABCDEF000011}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33A09D11-BB3C-45BD-A18D-ABCDEF000011}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33A09D11-BB3C-45BD-A18D-ABCDEF000011}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

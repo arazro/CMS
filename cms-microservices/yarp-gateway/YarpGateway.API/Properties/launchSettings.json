@@ -1,0 +1,13 @@
+{
+  "profiles": {
+    "YarpGateway.API": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "applicationUrl": "https://localhost:55270;http://localhost:44270",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+
+    }
+  }
+}

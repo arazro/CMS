@@ -1,0 +1,92 @@
+version: '3.9'
+
+services:
+  content-db:
+    image: postgres:16
+    container_name: content-db
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: contentdb
+    ports:
+      - "5433:5432"
+    volumes:
+      - contentdb_data:/var/lib/postgresql/data
+    networks:
+      - cms-network
+
+  user-db:
+    image: postgres:16
+    container_name: user-db
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: userdb
+    ports:
+      - "5434:5432"
+    volumes:
+      - userdb_data:/var/lib/postgresql/data
+    networks:
+      - cms-network
+
+  content-service:
+    build:
+      context: ./content-service
+      dockerfile: ContentService.API/Dockerfile
+    container_name: content-service
+    depends_on:
+      - content-db
+    working_dir: /app
+    volumes:
+      - ./content-service:/src/content-service
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Docker
+      - ConnectionStrings__Default=Host=content-db;Port=5432;Database=contentdb;Username=postgres;Password=postgres
+      - Services__UserService=http://user-service:8080
+    ports:
+      - "44271:8080"
+    networks:
+      - cms-network
+
+
+  user-service:
+    build:
+      context: ./user-service
+      dockerfile: UserService.API/Dockerfile
+    container_name: user-service
+    depends_on:
+      - user-db
+    working_dir: /app
+    volumes:
+      - ./user-service:/src/user-service
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Docker
+      - ConnectionStrings__Default=Host=user-db;Port=5432;Database=userdb;Username=postgres;Password=postgres
+    ports:
+      - "44272:8080"
+    networks:
+      - cms-network
+
+
+  yarp-gateway:
+    build:
+      context: ./yarp-gateway
+      dockerfile: YarpGateway.API/Dockerfile
+    container_name: yarp-gateway
+    depends_on:
+      - content-service
+      - user-service
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "44270:8080"
+    networks:
+      - cms-network
+
+volumes:
+  contentdb_data:
+  userdb_data:
+
+networks:
+  cms-network:
+    driver: bridge

@@ -1,0 +1,11 @@
+docker-compose up --build
+
+
+# dotnet ef migrations add InitialCreate --project content-service/ContentService.Infrastructure --startup-project content-service/ContentService.API
+set ASPNETCORE_ENVIRONMENT=Development
+dotnet ef database update --project content-service/ContentService.Infrastructure --startup-project content-service/ContentService.API
+
+
+# dotnet ef migrations add InitialCreate --project user-service/UserService.Infrastructure --startup-project user-service/UserService.API
+set ASPNETCORE_ENVIRONMENT=Development
+dotnet ef database update --project user-service/UserService.Infrastructure --startup-project user-service/UserService.API
