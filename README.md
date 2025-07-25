@@ -86,10 +86,9 @@ Her servis (İçerik & Kullanıcı) kendi **API**, **Application**, **Domain**, 
 
 After running, you can test APIs from:
 
-- `http://localhost:8000/content/swagger` → ContentService
-- `http://localhost:8000/user/swagger` → UserService
-
-(Accessible via YARP Gateway)
+- `http://localhost:44271/swagger/index.html` → ContentService
+- `http://localhost:44272/uswagger/index.html` → UserService
+- `http://localhost:44270/swagger/index.html` → YARP Gateway
 
 ---
 
