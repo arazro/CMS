@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using UserService.Application.Interfaces;
+using UserService.Domain.Interfaces;
 using UserService.Domain.Entities;
 using UserService.Infrastructure.Persistence;
 

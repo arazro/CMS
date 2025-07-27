@@ -1,0 +1,109 @@
+## .NET
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## Build results
+*.dll
+*.exe
+*.app
+*.appx
+*.log
+*.vspscc
+*.vssscc
+
+## NuGet
+*.nupkg
+*.snupkg
+.nuget/
+packages/
+*.nuspec
+*.psmdcp
+
+## dotnet user secrets
+**/secrets.json
+
+## VS Code
+.vscode/
+
+## Visual Studio
+.vs/
+*.dbmdl
+*.bak
+*.backup
+*.sql
+
+## Rider
+.idea/
+
+## Resharper
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+## Docker
+**/docker-compose.override.yml
+**/*.env
+**/Dockerfile.*.local
+docker-compose.*
+*.pid
+
+## EF Core migrations snapshots
+**/Migrations/*Snapshot.cs
+
+## Test results
+TestResults/
+*.coverage
+*.testhost.dll
+*.trx
+
+## Logs
+logs/
+*.log
+
+## User-specific files
+*.user
+*.vspscc
+*.vssscc
+
+## System
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+## Mac OS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+## Unix
+*.swp
+*.swo
+*~
+
+## JetBrains Rider logs
+.idea/
+.idea_modules/
+.idea/*
+
+## Dependency caches
+*.cache
+.cache/
+ncrunch*
+
+## GitHub Codespaces
+.devcontainer/
+codespace-*
+
+## Others
+.env
+.env.*
+*.sqlite
+*.sqlite3
+*.mdf
+*.ldf
+*.log

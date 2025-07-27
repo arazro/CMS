@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using UserService.Application.Interfaces;
+using UserService.Domain.Interfaces;
 using UserService.Infrastructure.Persistence;
 
 var builder = WebApplication.CreateBuilder(args);

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using UserService.Domain.Entities;
 
-namespace UserService.Application.Interfaces
+namespace UserService.Domain.Interfaces
 {
     public interface IUserRepository
     {

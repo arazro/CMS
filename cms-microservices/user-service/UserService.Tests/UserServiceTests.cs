@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using FluentAssertions;
 using Moq;
 using UserService.Application.DTOs;
-using UserService.Application.Interfaces;
+using UserService.Domain.Interfaces;
 using UserService.Domain.Entities;
 using UserService.Tests.Helpers;
 using Xunit;
