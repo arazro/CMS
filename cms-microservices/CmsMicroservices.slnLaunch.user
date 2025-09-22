@@ -3,17 +3,17 @@
     "Name": "New Profile",
     "Projects": [
       {
-        "Path": "content-service\\ContentService.API\\ContentService.API.csproj",
+        "Path": "Services\\content-service\\ContentService.API\\ContentService.API.csproj",
         "Action": "Start",
         "DebugTarget": "ContentService.API"
       },
       {
-        "Path": "user-service\\UserService.API\\UserService.API.csproj",
+        "Path": "Services\\user-service\\UserService.API\\UserService.API.csproj",
         "Action": "Start",
         "DebugTarget": "UserService.API"
       },
       {
-        "Path": "yarp-gateway\\YarpGateway.API\\YarpGateway.API.csproj",
+        "Path": "Gateway\\yarp-gateway\\YarpGateway.API\\YarpGateway.API.csproj",
         "Action": "Start",
         "DebugTarget": "YarpGateway.API"
       }

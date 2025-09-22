@@ -1,11 +1,17 @@
 docker-compose up --build
 
 
-# dotnet ef migrations add InitialCreate --project content-service/ContentService.Infrastructure --startup-project content-service/ContentService.API
+# dotnet ef migrations add InitialCreate --project Services/content-service/ContentService.Infrastructure --startup-project Services/content-service/ContentService.API
 set ASPNETCORE_ENVIRONMENT=Development
-dotnet ef database update --project content-service/ContentService.Infrastructure --startup-project content-service/ContentService.API
+dotnet ef database update --project Services/content-service/ContentService.Infrastructure --startup-project Services/content-service/ContentService.API
 
 
-# dotnet ef migrations add InitialCreate --project user-service/UserService.Infrastructure --startup-project user-service/UserService.API
+# dotnet ef migrations add InitialCreate --project Services/user-service/UserService.Infrastructure --startup-project Services/user-service/UserService.API
 set ASPNETCORE_ENVIRONMENT=Development
-dotnet ef database update --project user-service/UserService.Infrastructure --startup-project user-service/UserService.API
+dotnet ef database update --project Services/user-service/UserService.Infrastructure --startup-project Services/user-service/UserService.API
+
+
+
+dotnet new classlib -n SharedKernel -o Shared/SharedKernel
+dotnet add Services/user-service/UserService.API/UserService.API.csproj reference Shared/SharedKernel/SharedKernel.csproj
+dotnet add Services/content-service/ContentService.API/ContentService.API.csproj reference Shared/SharedKernel/SharedKernel.csproj

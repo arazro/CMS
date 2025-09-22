@@ -31,14 +31,14 @@ services:
 
   content-service:
     build:
-      context: ./content-service
+      context: ./Services/content-service
       dockerfile: ContentService.API/Dockerfile
     container_name: content-service
     depends_on:
       - content-db
     working_dir: /app
     volumes:
-      - ./content-service:/src/content-service
+      - ./Services/content-service:/src/Services/content-service
     environment:
       - ASPNETCORE_ENVIRONMENT=Docker
       - ConnectionStrings__Default=Host=content-db;Port=5432;Database=contentdb;Username=postgres;Password=postgres
@@ -51,14 +51,14 @@ services:
 
   user-service:
     build:
-      context: ./user-service
+      context: ./Services/user-service
       dockerfile: UserService.API/Dockerfile
     container_name: user-service
     depends_on:
       - user-db
     working_dir: /app
     volumes:
-      - ./user-service:/src/user-service
+      - ./Services/user-service:/src/Services/user-service
     environment:
       - ASPNETCORE_ENVIRONMENT=Docker
       - ConnectionStrings__Default=Host=user-db;Port=5432;Database=userdb;Username=postgres;Password=postgres
@@ -70,7 +70,7 @@ services:
 
   yarp-gateway:
     build:
-      context: ./yarp-gateway
+      context: ./Gateway/yarp-gateway
       dockerfile: YarpGateway.API/Dockerfile
     container_name: yarp-gateway
     depends_on:
